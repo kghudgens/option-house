@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 
 export function NavigationBar() {
-  return () => {
+  return (
     <div>
       <Nav
         activeKey="/home"
@@ -18,6 +18,6 @@ export function NavigationBar() {
           <Nav.Link eventKey="link-2">Link</Nav.Link>
         </Nav.Item>
       </Nav>
-    </div>;
-  };
+    </div>
+  );
 }

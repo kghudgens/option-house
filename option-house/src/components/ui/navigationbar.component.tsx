@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { StockSearchBar } from "../api/stock.component";
 import "./navigationbar.css";
 
 export const NavigationBar = () => {
@@ -15,15 +16,7 @@ export const NavigationBar = () => {
           <Nav.Link href="#home">Search</Nav.Link>
           <Nav.Link href="#home">Your Stocks</Nav.Link>
         </Nav>
-        <Form className="d-flex">
-          <Form.Control
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-          <Button variant="outline-success">Search</Button>
-        </Form>
+        <StockSearchBar />
       </Navbar>
     </Container>
   );
